@@ -1,0 +1,185 @@
+<html>
+
+<head>
+
+    <title> calculator   </title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        body {
+            background-color: yellowgreen;
+        }
+
+
+
+        h1 {
+            text-align: center;
+            font-family:sans-serif;
+            text-transform:uppercase;
+
+           
+        }
+
+
+        .calc-body {
+
+            text-align:center;
+
+  
+        }
+
+
+
+        .calcu-head {
+            text-align: center;
+            
+        }
+        .card {
+            margin: 0 auto;
+            max-width: 350px;
+            
+            margin-top: 30px;
+            transition: 0.3s;
+            font-size: 1cm;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+            .card :hover {
+                box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+            }
+
+        .calcu-head #result {
+            border-radius: 15px;
+            width: 360px;
+            height: 65px;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 0 5px;
+            letter-spacing: 3px;
+            background-color: red;
+            text-align:right;
+        }
+           
+        .btn {
+            width: 87px;
+            height: 70px;
+            border-radius:10px;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: ▢#1f2326;
+            color: green;
+        }
+
+        .btn-style {
+            background-color: yellowgreen;
+            color:yellow;
+        }
+
+        .btn:hover {
+            background-color: blue;
+        }
+
+        p {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+
+
+     
+
+    <h1> calculator</h1>
+
+    <div class="card">
+       
+
+    </div>
+
+    <div class="calcu-head">
+
+
+        <input type="text" id="result" maxlength="10 ">
+
+
+    </div>
+
+
+    <div class="calc-body">
+
+
+
+
+        <div>
+
+
+            <input type="button" class="btn btn-style" value="C" onclick="clearResult()">
+            <input type="button" class="btn btn-style " value="+- /" onclick="insertNumber('+ - /')">
+            <input type="button" class="btn btn-style" value="%" onclick="insertNumber ('%')">
+            <input type="button" class="btn btn-style" value="/" onclick="insertNumber('/')">
+
+        </div>
+
+        <div>
+            <input type="button" class="btn" value="7" onclick="insertNumber(7)">
+            <input type="button" class="btn" value="8" onclick="insertNumber(8)">
+            <input type="button" class="btn" value="9" onclick="insertNumber(9)">
+            <input type="button" class="btn btn-style" value="x" onclick=" insertNumber('*')">
+
+        </div>
+
+        <div>
+            <input type="button" class="btn" value="4" onclick="insertNumber(4)">
+            <input type="button" class="btn" value="5" onclick="insertNumber(5)">
+            <input type="button" class="btn" value="6" onclick="insertNumber(6)">
+            <input type="button" class="btn btn-style" value="-" onclick="insertNumber('-')">
+
+        </div>
+
+        <div>
+            <input type="button" class="btn" value="1" onclick="insertNumber(1)">
+            <input type="button" class="btn" value="2" onclick="insertNumber(2)">
+            <input type="button" class="btn" value="3" onclick="insertNumber(3)">
+            <input type="button" class="btn btn-style" value="+" onclick="insertNumber('+')">
+
+        </div>
+
+        <div>
+            <input type="button" class="btn" value="0" onclick="insertNumber(0)">
+            <input type="button" class="btn btn-style" value="." onclick="insertNumber('.')">
+            <input type="button" class="btn btn-style" value="DEL" onclick="insertNumber ('del')">
+            <input type="button" class="btn" style=" background-color: red" value="=" onclick="calculate()">
+
+        </div>
+
+
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+
+ 
+
+        
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
